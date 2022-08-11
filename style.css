@@ -108,8 +108,9 @@ canvas {
   font-family: 'Helvetica Neue Light';
 }
 
-.modal-body .h1{
+h1{
   font-weight: bold;
+  font-family: 'Helvetica Neue Light';
   font-size: 1.25rem;
 }
 
@@ -128,4 +129,8 @@ canvas {
 #overlay.active {
   opacity: 1;
   pointer-events: all;
+}
+
+code{
+  font-size: 1.25rem;
 }
