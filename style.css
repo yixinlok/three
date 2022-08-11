@@ -60,7 +60,7 @@ canvas {
   left: 50%;
   transform: translate(-50%, -50%) scale(0);
   opacity: 0%;
-  transition: 200ms ease-out;
+  transition: 20ms ease-out;
   transition-delay: 600ms;
   border: 0px;
   border-radius: 10px;
@@ -109,7 +109,7 @@ canvas {
 #overlay {
   position: fixed;
   opacity: 0;
-  transition: 200ms ease-out;
+  transition: 20ms ease-out;
   transition-delay: 600ms;
   top: 0;
   left: 0;
