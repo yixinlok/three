@@ -65,8 +65,9 @@ canvas {
   border-radius: 5px;
   z-index: 0;
   background-color: rgb(36, 36, 36);
-  width: 90vw;
-  height: 90vh;
+  width: 100vw;
+  height: 100vh;
+  overflow-y: scroll;
 }
 
 .modal.active {
@@ -75,7 +76,7 @@ canvas {
 }
 
 .modal-header {
-  padding: 100px 50px 10px 50px;
+  padding: 120px 80px 20px 80px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -98,16 +99,14 @@ canvas {
   font-family: 'Helvetica Neue Light';
   font-size: 3rem;
   line-height: 1.5;
-  overflow-y: initial;
 }
 
 .modal-body {
-  padding: 10px 50px;
+  padding: 20px 80px;
   height: 500px;
   font-size: 1.25rem;
   line-height: 1.5;
   font-family: 'Helvetica Neue Light';
-  overflow-y: scroll;
 }
 
 #overlay {
