@@ -108,6 +108,13 @@ canvas {
   font-family: 'Helvetica Neue Light';
 }
 
+.modal-footer {
+  padding: 120px 80px 30px 80px;
+  font-size: 1.25rem;
+  line-height: 1.5;
+  font-family: 'Helvetica Neue Light';
+}
+
 h1{
   font-weight: bold;
   font-family: 'Helvetica Neue Light';
