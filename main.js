@@ -68,7 +68,7 @@ function init() {
 
     loader = new GLTFLoader();
     init_objects();
-    // init_controls();
+    init_controls();
     clock = new THREE.Clock();
     clock.start();
 
