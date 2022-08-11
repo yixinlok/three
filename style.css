@@ -103,10 +103,11 @@ canvas {
 
 .modal-body {
   padding: 10px 50px;
+  height: 500px;
   font-size: 1.25rem;
   line-height: 1.5;
   font-family: 'Helvetica Neue Light';
-  overflow-y: auto;
+  overflow-y: scroll;
 }
 
 #overlay {
