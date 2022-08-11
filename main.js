@@ -94,12 +94,12 @@ function init() {
     window.addEventListener( 'resize', onWindowResize );
     
     const progressBar = document.getElementById("progress-bar");
-    loadingManager.onProgress = function(url,item,total){
+    loadingManager.onProgress = function(url,loaded,total){
         progressBar.value = (loaded/total)*100;
     }
 
     const loadingScreen = document.querySelector('.loading-screen');
-    loadingManager.onLoad = function(url,item,total){
+    loadingManager.onLoad = function(){
         loadingScreen.style.display = "none";
     }
     mouse = new THREE.Vector2();
