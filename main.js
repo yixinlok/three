@@ -29,7 +29,7 @@ const closeModalButtons = document.querySelectorAll('[data-close-button]')
 const overlay = document.getElementById('overlay')
 var modal;
 
-const loadingManager = new THREE.loadingManager();
+const loadingManager = new THREE.LoadingManager();
 
 
 const params = {
