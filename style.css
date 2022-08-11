@@ -60,7 +60,6 @@ canvas {
   left: 50%;
   transform: translate(-50%, -50%) scale(0);
   opacity: 0%;
-  transition: 20ms ease-out;
   transition-delay: 600ms;
   border: 0px;
   border-radius: 10px;
@@ -76,31 +75,33 @@ canvas {
 }
 
 .modal-header {
-  padding: 10px 15px;
+  padding: 100px 50px 10px 50px;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
 .modal-header .title {
-  font-size: 1.25rem;
+  font-family: 'Helvetica Neue Light';
+  font-size: 3rem;
   line-height: 1.5;
   vertical-align: middle;
 }
 
 .modal-header .close-button {
+  text-decoration: underline;
   cursor: pointer;
   color: white;
   border: none;
   outline: none;
   background: none;
   font-family: 'Helvetica Neue Light';
-  font-size: 1.25rem;
+  font-size: 3rem;
   line-height: 1.5;
 }
 
 .modal-body {
-  padding: 10px 15px;
+  padding: 10px 50px;
   font-size: 1.25rem;
   line-height: 1.5;
   font-family: 'Helvetica Neue Light';
@@ -109,7 +110,6 @@ canvas {
 #overlay {
   position: fixed;
   opacity: 0;
-  transition: 20ms ease-out;
   transition-delay: 600ms;
   top: 0;
   left: 0;
