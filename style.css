@@ -98,6 +98,7 @@ canvas {
   font-family: 'Helvetica Neue Light';
   font-size: 3rem;
   line-height: 1.5;
+  overflow-y: initial;
 }
 
 .modal-body {
@@ -105,6 +106,7 @@ canvas {
   font-size: 1.25rem;
   line-height: 1.5;
   font-family: 'Helvetica Neue Light';
+  overflow-y: auto;
 }
 
 #overlay {
