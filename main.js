@@ -29,6 +29,9 @@ const closeModalButtons = document.querySelectorAll('[data-close-button]')
 const overlay = document.getElementById('overlay')
 var modal;
 
+const loadingManager = new THREE.loadingManager();
+
+
 const params = {
     color: 0xffffff,
     transmission: 1,
@@ -51,7 +54,7 @@ animate();
 function init() {
     //scene, background, aspect ratios
     scene = new THREE.Scene();
-    scene.background = new THREE.CubeTextureLoader()
+    scene.background = new THREE.CubeTextureLoader(loadingManager)
         .setPath(' sky/')
         .load(['px.png', 'nx.png', 'py.png', 'ny.png', 'pz.png', 'nz.png']);
     camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 1, 1000);
@@ -66,7 +69,7 @@ function init() {
     init_materials();
     init_lights();
 
-    loader = new GLTFLoader();
+    loader = new GLTFLoader(loadingManager);
     init_objects();
     init_controls();
     clock = new THREE.Clock();
@@ -90,12 +93,20 @@ function init() {
     })
     window.addEventListener( 'resize', onWindowResize );
     
+    const progressBar = document.getElementById("progress-bar");
+    loadingManager.onProgress = function(url,item,total){
+        progressBar.value = (loaded/total)*100;
+    }
+
+    loadingManager.onStart = function(url,item,total){
+        console.log("Started loading");
+    }
     mouse = new THREE.Vector2();
 }
 
 function init_materials() {
     // glass material
-    const glassCube = new THREE.CubeTextureLoader()
+    const glassCube = new THREE.CubeTextureLoader(loadingManager)
         .setPath('sky/')
         .load(['px.png', 'nx.png', 'py.png', 'ny.png', 'pz.png', 'nz.png']);
     // .load(['posx.jpg', 'negx.jpg', 'posy.jpg', 'negy.jpg', 'posz.jpg', 'negz.jpg']);
@@ -118,7 +129,7 @@ function init_materials() {
     });
 
     //metal
-    const metalGlassCube = new THREE.CubeTextureLoader()
+    const metalGlassCube = new THREE.CubeTextureLoader(loadingManager)
         .setPath('sky/')
         .load(['px.png', 'nx.png', 'py.png', 'ny.png', 'pz.png', 'nz.png']);
     // .load(['posx.jpg', 'negx.jpg', 'posy.jpg', 'negy.jpg', 'posz.jpg', 'negz.jpg']);
