@@ -88,7 +88,8 @@ function init() {
             closeModal(modal)
         })
     })
-
+    window.addEventListener( 'resize', onWindowResize );
+    
     mouse = new THREE.Vector2();
 }
 
@@ -382,4 +383,13 @@ function closeModal(modal) {
     if (modal == null) return
     modal.classList.remove('active')
 //     overlay.classList.remove('active')
+}
+
+function onWindowResize() {
+
+    camera.aspect = window.innerWidth / window.innerHeight;
+    camera.updateProjectionMatrix();
+
+    renderer.setSize( window.innerWidth, window.innerHeight );
+
 }
