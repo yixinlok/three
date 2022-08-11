@@ -270,7 +270,7 @@ function init_contact() {
 
 function init_controls() {
     const controls = new OrbitControls(camera, renderer.domElement);
-    // controls.enableRotate = false;
+    controls.enableRotate = false;
     controls.enableZoom = false;
     controls.enablePan = true;
 
