@@ -54,7 +54,7 @@ animate();
 function init() {
     //scene, background, aspect ratios
     scene = new THREE.Scene();
-    scene.background = new THREE.CubeTextureLoader(loadingManager)
+    scene.background = new THREE.CubeTextureLoader(/*loadingManager*/)
         .setPath(' sky/')
         .load(['px.png', 'nx.png', 'py.png', 'ny.png', 'pz.png', 'nz.png']);
     camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 1, 1000);
@@ -108,7 +108,7 @@ function init() {
 
 function init_materials() {
     // glass material
-    const glassCube = new THREE.CubeTextureLoader(loadingManager)
+    const glassCube = new THREE.CubeTextureLoader(/*loadingManager*/)
         .setPath('sky/')
         .load(['px.png', 'nx.png', 'py.png', 'ny.png', 'pz.png', 'nz.png']);
     // .load(['posx.jpg', 'negx.jpg', 'posy.jpg', 'negy.jpg', 'posz.jpg', 'negz.jpg']);
@@ -131,7 +131,7 @@ function init_materials() {
     });
 
     //metal
-    const metalGlassCube = new THREE.CubeTextureLoader(loadingManager)
+    const metalGlassCube = new THREE.CubeTextureLoader(/*loadingManager*/)
         .setPath('sky/')
         .load(['px.png', 'nx.png', 'py.png', 'ny.png', 'pz.png', 'nz.png']);
     // .load(['posx.jpg', 'negx.jpg', 'posy.jpg', 'negy.jpg', 'posz.jpg', 'negz.jpg']);
