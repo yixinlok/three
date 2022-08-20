@@ -96,6 +96,7 @@ function init() {
     const progressBar = document.getElementById("progress-bar");
     loadingManager.onProgress = function(url,loaded,total){
         progressBar.value = (loaded/total)*100;
+        console.log('Loading...')
     }
 
     const loadingScreen = document.querySelector('.loading-screen');
