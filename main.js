@@ -96,12 +96,13 @@ function init() {
     const progressBar = document.getElementById("progress-bar");
     loadingManager.onProgress = function(url,loaded,total){
         progressBar.value = (loaded/total)*100;
-        console.log('Loading...')
+        console.log((loaded/total))
     }
 
     const loadingScreen = document.querySelector('.loading-screen');
     loadingManager.onLoad = function(){
         loadingScreen.style.display = "none";
+        console.log('Finished loading!')
     }
     mouse = new THREE.Vector2();
 }
