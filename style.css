@@ -16,7 +16,7 @@ canvas {
 :root {
   --dark-bg: rgba(25, 25, 25, 0.95);
   --spacing: 350px;
-  /* font-family: 'Helvetica Neue'; */
+  font-family: 'Arial';
   font-style: normal;
 }
 
