@@ -16,7 +16,7 @@ canvas {
 :root {
   --dark-bg: rgba(25, 25, 25, 0.95);
   --spacing: 350px;
-  font-family: 'Arial';
+  font-family: 'Helvetica Neue Light';
   font-style: normal;
 }
 
@@ -83,7 +83,7 @@ canvas {
 }
 
 .modal-header .title {
-  /* font-family: 'Helvetica Neue Light'; */
+  font-family: 'Helvetica Neue Light';
   font-size: 3rem;
   line-height: 1.5;
   vertical-align: middle;
@@ -96,7 +96,7 @@ canvas {
   border: none;
   outline: none;
   background: none;
-  /* font-family: 'Helvetica Neue Light'; */
+  font-family: 'Helvetica Neue Light';
   font-size: 3rem;
   line-height: 1.5;
 }
@@ -105,19 +105,19 @@ canvas {
   padding: 10px 80px 30px 80px;
   font-size: 1.25rem;
   line-height: 1.5;
-  /* font-family: 'Helvetica Neue Light'; */
+  font-family: 'Helvetica Neue Light';
 }
 
 .modal-footer {
   padding: 120px 80px 30px 80px;
   font-size: 1.25rem;
   line-height: 1.5;
-  /* font-family: 'Helvetica Neue Light'; */
+  font-family: 'Helvetica Neue Light';
 }
 
 h1{
   text-decoration: underline;
-  /* font-family: 'Helvetica Neue Light'; */
+  font-family: 'Helvetica Neue Light';
   font-size: 1.25rem;
   font-weight: normal;
 }
@@ -157,4 +157,14 @@ code{
   align-items: center;
   z-index: 100;
   color: white;
+}
+
+.lr-container {
+  display: flex;
+  height: 100vh; /* full viewport height */
+}
+
+.left-column, .right-column {
+  flex: 1; /* each takes 50% */
+  padding: 20px;
 }
