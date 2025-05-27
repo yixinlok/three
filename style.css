@@ -161,7 +161,7 @@ code{
 
 .lr-container {
   display: flex;
-  height: 100vh; /* full viewport height */
+  width: 100%;
 }
 
 .left-column, .right-column {
