@@ -64,7 +64,7 @@ canvas {
   border: 0px;
   border-radius: 5px;
   z-index: 0;
-  background-color: rgb(0, 0, 0);
+  background-color: rgb(25, 25, 25);
   width: 100vw;
   height: 100vh;
   overflow-y: scroll;
@@ -130,7 +130,7 @@ h1{
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: rgba(36, 36, 36, .5);
+  background-color: rgba(25, 25, 25, .5);
   pointer-events: none;
 }
 
