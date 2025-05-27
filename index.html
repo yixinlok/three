@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>yixin ☁️</title>
  
+  <script src="https://cdn.tailwindcss.com"></script>
   <link rel=stylesheet type="text/css" href="style.css">
 </head>
 
@@ -23,25 +24,63 @@
         <button data-close-button class="close-button">&lt&lt&lt</button>
       </div>
       <div class="modal-body">
-        Hi I'm Yixin, and I'm a 3rd year computer engineering undergraduate at the University of Toronto. 
-        I'm highly interested in 3D computer graphics. The particular applications that motivate me are those in AR/VR and digital art tools.
+        My name is Yixin and I'm a computer engineering new grad from the University of Toronto. 
+        I love computer graphics! 
+      </div>
+      <img src="img/me.jpeg" alt="Image not found" width="500" >
 
+
+      <div class="modal-footer"></div>
+    </div>
+
+    <div class="modal" id="experience">
+
+      <div class="modal-header">
+        <div class="title">Experience</div>
+        <button data-close-button class="close-button">&lt&lt&lt</button>
       </div>
+
       <div class="modal-body">
-        This summer, I worked as a research intern at the D3M Lab, where we investigated using novel Neural Information Retrieval (Neural IR) techniques (specifically, TAS-B)
-        to recommend recipes from natural text queries.
+        <h1>Research Fellow, Summer Geometry Initiative at the Massachusetts Institute of Technology (Jul 2024 – Aug 2024)</h1>
+        <p> Research fellowship consisting of short research projects in groups of 5 at Summer Geometry Initiative. Main project:  “Approximating Surfaces with Meshes” - supervised by Nicholas Sharp, Nvidia. </p>
+        <ul>
+          <li>Designed and implemented a surface approximation algorithm by using random sampling.</li>
+          <li>Ran and recorded experiments to determine best hyperparameters, using the chamfer distance error metric. </li>
+          <li>Developed an interactive 3D user interface to visualise and identify areas of improvement, using Python.</li>
+        </ul>
       </div>
+
       <div class="modal-body">
-        In my free time, I like digital and traditional art, playing badminton, and exploring new cities. 
+        <h1>Software Engineer, ModiFace (May 2023 – Jun 2024)</h1>
+        <p> Full time internship on developing a real time makeup and hairstyle virtual try-on iOS application and SDK at a startup. </p>
+        <ul>
+          <li>Integrated CoreML and ARCore models into the iOS application and SDK, improving the realism of the hair and makeup rendering, resulting in a patented software. </li>
+          <li>Spearheaded the migration of the in-house makeup rendering  API from v4 to v5 in the iOS SDK. </li>
+          <li>Implemented  the video recording and saving feature in the iOS application  using Swift and Objective C, multithreading it with the physics simulation, enhancing app stability under concurrent workloads.</li>
+          <li>Developed the 3D simulation algorithm with C++ to simulate the physical movement of over 10,000 vertices in real time,  alleviating the application’s runtime bottleneck by 15%, resulting in a research paper submission. </li>
+        </ul>
       </div>
-      
+
       <div class="modal-body">
-        Below are some of the key projects I have worked on:
+        <h1>Research Intern, Data-Driven Decision Making Lab at the University of Toronto</h1>
+        <p>Full time research internship on multi-aspect natural language  information retrieval.</p>
+        <ul>
+          <li>Generated a natural language query multi-aspect matching dataset with 500 entries, resulting in a SIGIR publication.</li>
+          <li>Benchmarked the dataset against natural language models (BERT, TAS-B, GPT-3), using Python and HuggingFace .</li>
+        </ul>
       </div>
+
+
+      <div class="modal-header">
+        <div class="title">Projects</div>
+      </div>
+
       <div class="modal-body">
-        <h1>3D Personal Website (this website!)</h1>
-        <img src="img/website.png" alt="Image not found" width="500" >
+        <h1>TailorSwift</h1>
+        <a href="https://github.com/yixinlok/tailorswift">
+        <img src="img/map.png" alt="Image not found" width="500" >
       </div>
+
       <div class="modal-body">
         <h1>Recipe search engine</h1>
         <a href="https://github.com/yixinlok/foodkg-search-tool">
@@ -49,61 +88,16 @@
         </a>
       </div>
       <div class="modal-body">
-        <h1>Pinball Game for DE1-SoC Computers, in C</h1>
+        <h1>Pinball Game/h1>
         <a href="https://github.com/yixinlok/pinball">
           <img src="img/pinball.gif" alt="Image not found" width="500" >
         </a>
       </div>
       <div class="modal-body">
-        <h1>Restaurant-finding Map Application, in C++</h1>
+        <h1>The Delorean</h1>
         <img src="img/map.png" alt="Image not found" width="500" >
       </div>
 
-      <div class="modal-footer"></div>
-    </div>
-
-    <div class="modal" id="experience">
-      <div class="modal-header">
-        <div class="title">Experience</div>
-        <button data-close-button class="close-button">&lt&lt&lt</button>
-      </div>
-      <div class="modal-body">
-        These are my work experiences over the past few years. To see my projects, see the about me section instead!
-      </div>
-      <div class="modal-body">
-        <h1>Research Fellow, Summer Geometry Initiative at the Massachusetts Institute of Technology (Jul 2024 – Aug 2024)</h1>
-        <p> Research fellowship consisting of short research projects in groups of 5 at Summer Geometry Initiative. Main project:  “Approximating Surfaces with Meshes” - supervised by Nicholas Sharp, Nvidia. 
-</p>
-        <ul>
-          <li>Designed and implemented a surface approximation algorithm by using random sampling.
-</li>
-          <li>Ran and recorded experiments to determine best hyperparameters, using the chamfer distance error metric. 
-</li>
-          <li>Developed an interactive 3D user interface to visualise and identify areas of improvement, using Python.</li>
-        </ul>
-      </div>
-      <div class="modal-body">
-        <h1>Software Engineer, ModiFace (May 2023 – Jun 2024)</h1>
-        <p> Full time internship on developing a real time makeup and hairstyle virtual try-on iOS application and SDK at a startup. </p>
-        <ul>
-          <li>Integrated CoreML and ARCore models into the iOS application and SDK, improving the realism of the hair and makeup rendering, resulting in a patented software. 
-</li>
-          <li>Spearheaded the migration of the in-house makeup rendering  API from v4 to v5 in the iOS SDK. </li>
-          <li>Implemented  the video recording and saving feature in the iOS application  using Swift and Objective C, multithreading it with the physics simulation, enhancing app stability under concurrent workloads.
-</li>
-          <li>Developed the 3D simulation algorithm with C++ to simulate the physical movement of over 10,000 vertices in real time,  alleviating the application’s runtime bottleneck by 15%, resulting in a research paper submission. 
-</li>
-        </ul>
-      </div>
-      <div class="modal-body">
-        <h1></h1>Research Intern, Data-Driven Decision Making Lab at the University of Toronto</h1>
-        <p>Full time research internship on multi-aspect natural language  information retrieval.</p>
-        <ul>
-          <li>Generated a natural language query multi-aspect matching dataset with 500 entries, resulting in a SIGIR publication.
-</li>
-          <li>Benchmarked the dataset against natural language models (BERT, TAS-B, GPT-3), using Python and HuggingFace .</li>
-        </ul>
-      </div>
       <div class="modal-footer"></div>
     </div>
     
